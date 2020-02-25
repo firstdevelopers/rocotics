@@ -10,5 +10,4 @@ app.use(require('./routes/index'));
 app.use(express.static(path.join(__dirname,'public')));
 
 
-app.listen(3000, ()=> { console.log('server started');}
-);
+app.listen((process.env.PORT || 3000), function () { console.log("The Server Has Started!"); });
